@@ -1,12 +1,18 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InteraccionObjeto : MonoBehaviour
 {
+    [Header("Referencias UI")]
     public GameObject indicadorX;
     public GameObject cuadroDialogo;
-    public string mensaje;
     public TextMeshProUGUI textoUI;
+    public string mensaje;
+
+    [Header("Configuración de Escena")]
+    public bool cambiaDeEscena = false; 
+    public string nombreEscenaPizzeria = "FreddyFazbear"; 
 
     private bool jugadorCerca = false;
 
@@ -18,7 +24,7 @@ public class InteraccionObjeto : MonoBehaviour
 
             if (!cuadroDialogo.activeSelf)
             {
-                // CONGELAR
+                
                 if (jugador != null) 
                 {
                     var scriptMov = jugador.GetComponent<MovimientoJugador>();
@@ -31,32 +37,23 @@ public class InteraccionObjeto : MonoBehaviour
             }
             else
             {
-                // Cerramos el diálogo primero
+                
                 cuadroDialogo.SetActive(false);
-                indicadorX.SetActive(true);
 
-                if (gameObject.name == "Malote") 
+                if (cambiaDeEscena) 
                 {
-                    // CAMBIO CLAVE: Buscamos la pelea incluso si el objeto está desactivado
-                    LogicaPelea pelea = Resources.FindObjectsOfTypeAll<LogicaPelea>()[0];
                     
-                    if (pelea != null) 
-                    {
-                        pelea.IniciarPelea();
-                    }
-                    else 
-                    {
-                        Debug.LogError("No se encontró el script LogicaPelea en la escena. ¡Asegúrate de que el panel tenga el script!");
-                    }
+                    SceneManager.LoadScene(nombreEscenaPizzeria); 
                 }
                 else 
                 {
-                    // DESCONGELAR (Solo para NPCs normales)
+                   
                     if (jugador != null) 
                     {
                         var scriptMov = jugador.GetComponent<MovimientoJugador>();
                         if(scriptMov != null) scriptMov.enabled = true;
                     }
+                    indicadorX.SetActive(true);
                 }
             }
         }

@@ -360,7 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2defc2f99622f49429dd5d09d1f454ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControladorPausa
-  objetoMenuPausa: {fileID: 1998008030}
 --- !u!4 &68570167
 Transform:
   m_ObjectHideFlags: 0
@@ -2807,7 +2806,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6523267901556000719, guid: 59d32c1f14fda76449b32befa45410f6, type: 3}
+  m_Sprite: {fileID: 1981301529807058213, guid: a21a30afdd9d9a84dbd0e7fab2c15a6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2831,8 +2830,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteraccionObjeto
   indicadorX: {fileID: 1005011137}
   cuadroDialogo: {fileID: 1639694707}
-  mensaje: Soy un malote oink
   textoUI: {fileID: 1638884846}
+  mensaje: HUR HUR HUR HUR HUR HUR HUR HUR
+  cambiaDeEscena: 1
+  nombreEscenaPizzeria: FreddyFazbear
 --- !u!4 &1284645095
 Transform:
   m_ObjectHideFlags: 0
@@ -2842,8 +2843,8 @@ Transform:
   m_GameObject: {fileID: 1284645091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.31, y: -1.68, z: 0}
-  m_LocalScale: {x: 0.374, y: 0.424715, z: 1}
+  m_LocalPosition: {x: 6.5222, y: -1.5082, z: 0}
+  m_LocalScale: {x: 0.5022072, y: 0.47933337, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3770,8 +3771,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteraccionObjeto
   indicadorX: {fileID: 683722581}
   cuadroDialogo: {fileID: 1639694707}
-  mensaje: Mmmh, muchos libros, una pena que nunca aprendi a leer
   textoUI: {fileID: 1638884846}
+  mensaje: Mmmh, muchos libros, una pena que nunca aprendi a leer
+  cambiaDeEscena: 0
+  nombreEscenaPizzeria: FreddyFazbear
 --- !u!4 &1693296312
 Transform:
   m_ObjectHideFlags: 0
@@ -4313,8 +4316,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteraccionObjeto
   indicadorX: {fileID: 1279794952}
   cuadroDialogo: {fileID: 1639694707}
-  mensaje: "\xA1Wouf! Eso s\xED que estuvo feo... mu\xE9vete con WASD...Wouf"
   textoUI: {fileID: 1638884846}
+  mensaje: "\xA1Wouf! Eso s\xED que estuvo feo... mu\xE9vete con WASD...Wouf"
+  cambiaDeEscena: 0
+  nombreEscenaPizzeria: FreddyFazbear
 --- !u!114 &2053007312
 MonoBehaviour:
   m_ObjectHideFlags: 0
