@@ -1,17 +1,17 @@
 using UnityEngine;
-using TMPro; // Agregamos esto para que el perro pueda escribir
+using TMPro; 
 
 public class DialogoPerro : MonoBehaviour
 {
     public GameObject cuadroDeTexto;
-    public TextMeshProUGUI textoUI; // Nueva casilla para el texto
-    public string mensajePerro;     // Nueva casilla para el mensaje del perro
+    public TextMeshProUGUI textoUI; 
+    public string mensajePerro;     
 
     private void OnTriggerEnter2D(Collider2D otro)
     {
         if (otro.CompareTag("Player"))
         {
-            // Antes de mostrar el cuadro, el perro escribe su mensaje
+            
             textoUI.text = mensajePerro; 
             cuadroDeTexto.SetActive(true);
         }

@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class JuegoGeneral : MonoBehaviour
 {
-    [Header("Escenas y Oficinas")]
+    [Header("Escenas")]
     public GameObject Oficina_Normal;      
     public GameObject MiniJuego;          
     public GameObject Estatica_Efecto;
     public GameObject ContenedorCorazones; 
-    [Header("UI y Gifs")]
+    [Header("UI")]
     public TextMeshProUGUI textoTiempo;   
     public GameObject Perdiste_Gif, Ganaste_Gif;
 
-    [Header("Elementos Minijuego")]
+    [Header("Minijuego")]
     public List<GameObject> TodosLosPanes; 
     public Movimiento_Mario ScriptTeto;   
 

@@ -3573,8 +3573,8 @@ MonoBehaviour:
   Estatica_Efecto: {fileID: 696265079}
   ContenedorCorazones: {fileID: 1246734874}
   textoTiempo: {fileID: 356494871}
-  Perdiste_Gif: {fileID: 1565053382}
-  Ganaste_Gif: {fileID: 1835052934}
+  Perdiste_Gif: {fileID: 757560545}
+  Ganaste_Gif: {fileID: 642284627}
   TodosLosPanes:
   - {fileID: 959136744}
   - {fileID: 1841513299}
@@ -3582,7 +3582,7 @@ MonoBehaviour:
   - {fileID: 1218351086}
   - {fileID: 2033557810}
   ScriptTeto: {fileID: 121482924}
-  tiempoRonda: 6
+  tiempoRonda: 10
 --- !u!114 &1632697170
 MonoBehaviour:
   m_ObjectHideFlags: 0
